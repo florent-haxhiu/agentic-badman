@@ -1,0 +1,37 @@
+# Amazon Bedrock AgentCore Fundamentals
+
+You've learned what agents are and how agentic systems work. Now the question is: where do your football agents actually play? Every professional football team needs a stadium — you can have the best squad in the world, but without a pitch, floodlights, and match-day operations, nobody's kicking a ball.
+Building an AI agent that scores goals in a demo is one thing. Making it run reliably at scale — with identity management, memory, tool access, and observability — is a whole different match. That's the gap between a proof of concept and a production system, and it's where most teams spend months building infrastructure instead of perfecting their agent's strategy.
+[So What is Bedrock AgentCore?](#so-what-is-bedrock-agentcore)
+[Amazon Bedrock AgentCore](https://aws.amazon.com/bedrock/agentcore/) handles that infrastructure for you. It's your team's world-class stadium — the pitch, the floodlights, the VAR system — all ready to go so you can focus on tactics, not construction.
+AgentCore lets you deploy and operate agents securely, at scale. Every service works with any framework — Strands Agents, LangChain, CrewAI, LlamaIndex — and any foundation model, inside or outside Amazon Bedrock. You get enterprise-grade reliability without giving up open-source flexibility.
+In short, AgentCore takes care of the heavy lifting so you can focus on what actually wins matches — your agent's brain:
+- Go from prototype to production without getting stuck in infrastructure quicksand
+- Build with any framework, any model, any tool — your playbook, your rules
+- Enterprise-grade security, session isolation, and comprehensive controls baked in from day one
+[🏟️ Core Features for This Workshop](#core-features-for-this-workshop)
+These are the two AgentCore capabilities you'll use hands-on in this workshop. They're the backbone of how your football agents get deployed and run on match day.
+[Amazon Bedrock AgentCore Runtime](#amazon-bedrock-agentcore-runtime)
+This is where your agents actually live and play. AgentCore Runtime is a fully managed, serverless compute environment purpose-built for AI agents. No servers to provision, no scaling policies to configure — Runtime handles all of that automatically. When thousands of teams kick off simultaneously during the tournament, Runtime scales from zero to thousands of concurrent sessions without breaking a sweat. Your agents get session-level isolation, built-in fault tolerance, and instant spin-up. You focus on making them smart; Runtime makes sure they show up to every match on time.
+[Amazon Bedrock AgentCore Harness](#amazon-bedrock-agentcore-harness)
+What if you could skip the code entirely and just tell your agent what to do? AgentCore Harness is a managed agent loop that replaces custom orchestration code with simple configuration. You declare what your agent does — which model it uses, what instructions it follows, and which tools it can call — and AgentCore handles the rest: the environment, compute, tooling, memory, identity, and observability. Each harness session runs in a secure, isolated microVM. Trying a different model or changing a prompt is a config change, not a code rewrite. Think of it as hiring a player and giving them a tactical briefing — no need to teach them how to run.
+The Harness is fully functional for this workshop. The Runtime path is the alternative for participants who prefer to write and deploy their own code.
+[Amazon Bedrock AgentCore Identity](#amazon-bedrock-agentcore-identity)
+Every player on a football team has a defined role, and your AI agents are no different. AgentCore Identity gives each agent its own secure identity and precisely scoped permissions. It plugs into existing identity providers (no migration headaches), manages tokens securely to avoid consent fatigue, and enforces just-enough access so your striker can't accidentally override the goalkeeper's decisions. Think of it as the team sheet that tells each agent exactly what they're allowed to do on the pitch.
+[⚡ Features to Level Up Your Agents](#features-to-level-up-your-agents)
+Already got the basics down? These features are your secret weapons — smarter tool discovery, persistent memory, and real-time performance insights to give your agents a competitive edge.
+[Amazon Bedrock AgentCore Gateway](#amazon-bedrock-agentcore-gateway)
+Your agents need tools — lots of them. Ball physics, sprint mechanics, passing models, tactical positioning... the list goes on. AgentCore Gateway turns APIs, Lambda functions, and existing services into agent-ready tools with minimal effort. The real magic? Built-in semantic search lets your agents discover the right tool for the right moment automatically. Your midfielder doesn't need to know every tool in advance — Gateway helps it find "quick pass" when under pressure and "through ball" when space opens up.
+[Amazon Bedrock AgentCore Memory](#amazon-bedrock-agentcore-memory)
+Great players learn from experience, and so should your agents. AgentCore Memory gives your agents both short-term recall (what happened earlier in this match) and long-term memory (patterns from previous games) — all without you managing complex memory infrastructure. Memory can even be shared across your team, so when one defender figures out an opponent's dribbling pattern, the whole backline benefits. It's like having a shared tactical notebook that updates in real-time.
+[Amazon Bedrock AgentCore Observability](#amazon-bedrock-agentcore-observability)
+When your striker keeps missing open goals, you need to know why. Observability gives you unified dashboards to trace every decision your agents make — which tools they called, what data they received, and where the logic went sideways. It supports OpenTelemetry-compatible telemetry and visualizes each step of the agent workflow. Monitor all 5 players simultaneously, spot bottlenecks, and fine-tune performance before the next match. Consider it your team's video analysis room.
+[📚 Good to Know Features](#good-to-know-features)
+These capabilities round out the AgentCore suite. You won't use them directly in this workshop, but they're worth knowing about for your next project.
+[Amazon Bedrock AgentCore Browser](#amazon-bedrock-agentcore-browser)
+Want your agents to browse the web? AgentCore Browser provides a fast, secure, cloud-based browser runtime that lets AI agents interact with websites at scale. Imagine your coach agent scouting opponent strategies online, or a defender studying positioning patterns from match analysis sites — all automated, all secure, all without managing browser infrastructure.
+[Amazon Bedrock AgentCore Code Interpreter](#amazon-bedrock-agentcore-code-interpreter)
+Sometimes your agents need to crunch numbers on the fly. Code Interpreter lets them execute code in isolated sandbox environments — perfect for real-time calculations like optimal shooting angles or formation analysis. It integrates seamlessly with popular frameworks and meets enterprise security requirements, so your agents can do math without you worrying about safety.
+[From Stadium to Squad](#from-stadium-to-squad)
+You now know the infrastructure that powers your football agents on match day. AgentCore is the stadium, the operations team, and the support staff — everything your agents need to perform at their best.
+Next up: the tools you'll use to actually build, deploy, and coach your squad. Time to meet your backroom staff.
